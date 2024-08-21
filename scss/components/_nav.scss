@@ -23,12 +23,9 @@ nav {
     button {
         border: none;
         background-color: #FFFFFF;
-        :active {
+        &:focus {
             transition: 0.5s;
             transform: rotate(-360deg);
-        }
-        :not(:active){
-            transition: 0.5s;
         }
         svg {
             margin: 0;
