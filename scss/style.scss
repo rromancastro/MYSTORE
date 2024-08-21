@@ -3,10 +3,12 @@
 
 @import 'vars';
 @import 'components/nav';
+@import 'components/card';
 @import 'pages/account';
+@import 'pages/index';
 
 body {
-    background-color: #F0F0F0;
+    background-color: #f1f1f1;
 }
 * {
     margin: 0;

@@ -10,6 +10,8 @@ nav {
     font-weight: 600;
     font-size: 25px;
     margin-right: auto;
+    text-decoration: none;
+    color: $grey2;
 }
 
 .navItems {
@@ -39,7 +41,7 @@ nav {
     padding: 10px;
     a {
         font-family: $font1;
-        color: #5F6368;
+        color: $grey1;
         font-size: 20px;
         text-decoration: none;
         transition: 0.5s;

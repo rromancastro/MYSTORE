@@ -12,6 +12,8 @@ nav {
   font-weight: 600;
   font-size: 25px;
   margin-right: auto;
+  text-decoration: none;
+  color: #3b3b3b;
 }
 
 .navItems {
@@ -84,6 +86,53 @@ nav {
     width: 30px;
   }
 }
+.card {
+  width: 100%;
+  border: none;
+  background-color: #F1F1F1;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.card img:hover {
+  transform: scale(1.05);
+}
+.card p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+.card div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#precioCard {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  padding: 5px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .card p {
+    font-size: 20px;
+  }
+  #precioCard {
+    font-size: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .card {
+    width: 45%;
+  }
+}
 .accountMain {
   display: flex;
   justify-content: center;
@@ -148,8 +197,48 @@ nav {
     width: 70%;
   }
 }
+.bannerIndex img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.destIndex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.destIndex h2 {
+  margin: 40px;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #3b3b3b;
+}
+
+#articlesDest {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+@media (max-width: 1000px) {
+  .bannerIndex img {
+    height: 100%;
+  }
+}
+@media (max-width: 425px) {
+  #articlesDest {
+    flex-wrap: wrap;
+  }
+}
 body {
-  background-color: #F0F0F0;
+  background-color: #f1f1f1;
 }
 
 * {
