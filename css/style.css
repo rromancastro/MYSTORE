@@ -116,6 +116,7 @@ nav {
 }
 .formItem label {
   font-family: "Nunito", sans-serif;
+  color: #3b3b3b;
   font-size: 20px;
   font-weight: 500;
 }
@@ -129,14 +130,24 @@ nav {
   background-color: #F0F0F0;
   border: none;
   border-radius: 5px;
-  font-family: "Nunito", sans-serif;
+  font-family: #3b3b3b;
   font-size: 15px;
   transition: 1s;
+  color: #5F6368;
 }
 .enviar:hover {
   transform: scale(1.1);
 }
 
+@media (max-width: 425px) {
+  .accountSect {
+    width: 80%;
+    height: 500px;
+  }
+  .accountSect img {
+    width: 70%;
+  }
+}
 body {
   background-color: #F0F0F0;
 }
