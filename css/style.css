@@ -89,7 +89,8 @@ nav {
 .card {
   width: 100%;
   border: none;
-  background-color: #F1F1F1;
+  background-color: #dfdfdf;
+  border-radius: none;
 }
 .card img {
   width: 100%;
@@ -103,6 +104,8 @@ nav {
   font-family: "Nunito", sans-serif;
   font-weight: 500;
   font-size: 30px;
+  color: #3b3b3b;
+  padding: 0 10px;
 }
 .card div {
   display: flex;
@@ -115,9 +118,14 @@ nav {
 #precioCard {
   position: absolute;
   bottom: 0;
-  font-size: 20px;
-  padding: 5px;
+  margin-left: 0;
+  font-size: 15px;
   padding-bottom: 0;
+  background-color: #dfdfdf;
+  color: #3b3b3b;
+  padding: 3px;
+  padding-left: 10px;
+  border-radius: 0 5px 0 0;
 }
 
 @media (max-width: 768px) {
@@ -125,12 +133,17 @@ nav {
     font-size: 20px;
   }
   #precioCard {
-    font-size: 15px;
+    font-size: 12px;
+    padding: 0 5px;
+    padding-left: 10px;
   }
 }
 @media (max-width: 425px) {
   .card {
     width: 45%;
+  }
+  .card p {
+    font-size: 17px;
   }
 }
 .accountMain {
@@ -235,6 +248,9 @@ nav {
 @media (max-width: 425px) {
   #articlesDest {
     flex-wrap: wrap;
+  }
+  .destIndex h2 {
+    font-size: 30px;
   }
 }
 body {

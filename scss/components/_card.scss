@@ -1,7 +1,8 @@
 .card {
     width: 100%;
     border: none;
-    background-color: #F1F1F1;
+    background-color: #dfdfdf;
+    border-radius: none;
     img {
         width: 100%;
         height: 100%;
@@ -14,6 +15,8 @@
         font-family: $font2;
         font-weight: 500;
         font-size: 30px;
+        color: $grey2;
+        padding: 0 10px;
     }
     div {
         display: flex;
@@ -27,9 +30,14 @@
 #precioCard {
     position: absolute;
     bottom: 0;
-    font-size: 20px;
-    padding: 5px;
+    margin-left: 0;
+    font-size: 15px;
     padding-bottom: 0;
+    background-color: #dfdfdf;
+    color: $grey2;
+    padding: 3px;
+    padding-left: 10px;
+    border-radius: 0 5px 0 0;
 }
 
 @media (max-width: 768px){
@@ -39,11 +47,16 @@
         }
     }
     #precioCard {
-        font-size: 15px;
+        font-size: 12px;
+        padding: 0 5px;
+        padding-left: 10px;
     }
 }
 @media (max-width: 425px){
     .card {
         width: 45%;
+        p {
+            font-size: 17px;
+        }
     }
 }
