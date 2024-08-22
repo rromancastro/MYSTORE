@@ -20,6 +20,9 @@ nav {
   display: flex;
   gap: 30px;
 }
+.navItems svg {
+  fill: #5584b0;
+}
 
 .dropp {
   margin-right: 30px;
@@ -34,6 +37,7 @@ nav {
 }
 .dropp button svg {
   margin: 0;
+  fill: #5584b0;
 }
 
 .navLinks {
@@ -63,6 +67,7 @@ nav {
   width: 100%;
   background-color: #FFFFFF;
   z-index: 100;
+  border-radius: 0 0 10px 10px;
 }
 
 @media (max-width: 768px) {
@@ -89,7 +94,7 @@ nav {
 .card {
   width: 100%;
   border: none;
-  background-color: #dfdfdf;
+  background-color: #e6e6e6;
   border-radius: none;
 }
 .card img {
@@ -121,7 +126,7 @@ nav {
   margin-left: 0;
   font-size: 15px;
   padding-bottom: 0;
-  background-color: #dfdfdf;
+  background-color: #e6e6e6;
   color: #3b3b3b;
   padding: 3px;
   padding-left: 10px;
@@ -189,7 +194,7 @@ nav {
 }
 
 .enviar {
-  background-color: #F0F0F0;
+  background-color: #f7f3ea;
   border: none;
   border-radius: 5px;
   font-family: #3b3b3b;
@@ -254,7 +259,7 @@ nav {
   }
 }
 body {
-  background-color: #f1f1f1;
+  background-color: #f2f4f7;
 }
 
 * {
