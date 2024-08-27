@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 nav {
   display: flex;
   align-items: center;
@@ -21,7 +22,7 @@ nav {
   gap: 30px;
 }
 .navItems svg {
-  fill: #5584b0;
+  fill: #1E2A3D;
 }
 
 .dropp {
@@ -37,7 +38,7 @@ nav {
 }
 .dropp button svg {
   margin: 0;
-  fill: #5584b0;
+  fill: #1E2A3D;
 }
 
 .navLinks {
@@ -46,9 +47,10 @@ nav {
   padding: 10px;
 }
 .navLinks a {
-  font-family: "Kanit", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   color: #5F6368;
-  font-size: 20px;
+  font-size: 17px;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -91,64 +93,54 @@ nav {
     width: 30px;
   }
 }
-.card {
-  width: 100%;
-  border: none;
-  background-color: #e6e6e6;
-  border-radius: none;
+.infoCard {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  width: 24%;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 20px;
 }
-.card img {
-  width: 100%;
-  height: 100%;
-  transition: 1s;
+.infoCard img {
+  height: 40%;
+  background-color: red;
+  filter: brightness(2.5);
+  border-radius: 50%;
+  padding: 5px;
 }
-.card img:hover {
-  transform: scale(1.05);
-}
-.card p {
-  font-family: "Nunito", sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-  color: #3b3b3b;
-  padding: 0 10px;
-}
-.card div {
+.infoCard div {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
 }
-
-#precioCard {
-  position: absolute;
-  bottom: 0;
-  margin-left: 0;
+.infoCard div h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.infoCard div p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 15px;
-  padding-bottom: 0;
-  background-color: #e6e6e6;
-  color: #3b3b3b;
-  padding: 3px;
-  padding-left: 10px;
-  border-radius: 0 5px 0 0;
 }
 
 @media (max-width: 768px) {
-  .card p {
-    font-size: 20px;
-  }
-  #precioCard {
-    font-size: 12px;
-    padding: 0 5px;
-    padding-left: 10px;
+  .infoCard {
+    width: 47%;
   }
 }
 @media (max-width: 425px) {
-  .card {
-    width: 45%;
+  .infoCard {
+    height: 100%;
   }
-  .card p {
-    font-size: 17px;
+  .infoCard img {
+    height: 25%;
+  }
+  .infoCard div h6 {
+    font-size: 13px;
+  }
+  .infoCard div p {
+    font-size: 10px;
   }
 }
 .accountMain {
@@ -190,11 +182,11 @@ nav {
 .formItem input {
   border-radius: 5px;
   border: none;
-  background-color: #F0F0F0;
+  background-color: #E3ECEF;
 }
 
 .enviar {
-  background-color: #f7f3ea;
+  background-color: #d4dcdf;
   border: none;
   border-radius: 5px;
   font-family: #3b3b3b;
@@ -215,51 +207,59 @@ nav {
     width: 70%;
   }
 }
-.bannerIndex img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  object-position: center;
+.carousel-item {
+  position: relative;
 }
-
-.destIndex {
+.carousel-item div {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  width: 50%;
+  height: 700px;
+  position: absolute;
+  z-index: 2;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.destIndex h2 {
-  margin: 40px;
-  margin-bottom: 0;
+.carousel-item div p {
   text-align: center;
-  font-family: "Nunito", sans-serif;
+  color: #ffffff;
   font-size: 40px;
-  font-weight: 800;
-  color: #3b3b3b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+  z-index: 1;
+  filter: brightness(0.6);
 }
 
-#articlesDest {
+.indexInfo {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 30px;
-  padding: 30px;
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
-@media (max-width: 1000px) {
-  .bannerIndex img {
-    height: 100%;
+@media (max-width: 768px) {
+  .indexInfo {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 @media (max-width: 425px) {
-  #articlesDest {
-    flex-wrap: wrap;
+  .carousel-item div p {
+    font-size: 20px;
   }
-  .destIndex h2 {
-    font-size: 30px;
+  .carousel-item img {
+    height: 250px;
   }
 }
 body {
-  background-color: #f2f4f7;
+  background-color: #E3ECEF;
 }
 
 * {

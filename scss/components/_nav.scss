@@ -18,7 +18,7 @@ nav {
     display: flex;
     gap: 30px;
     svg {
-        fill: #5584b0;
+        fill: $azulOsc;
     }
 }
 
@@ -33,7 +33,7 @@ nav {
         }
         svg {
             margin: 0;
-            fill: #5584b0;
+            fill: $azulOsc;
         }
     }
 }
@@ -43,9 +43,10 @@ nav {
     justify-content: space-between;
     padding: 10px;
     a {
-        font-family: $font1;
+        font-family: $font3;
+        font-weight: 500;
         color: $grey1;
-        font-size: 20px;
+        font-size: 17px;
         text-decoration: none;
         transition: 0.5s;
         :hover {
