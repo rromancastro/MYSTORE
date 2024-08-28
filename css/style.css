@@ -57,6 +57,11 @@ nav {
 .navLinks a :hover {
   color: black;
 }
+.navLinks .sit {
+  color: #1E2A3D;
+  text-decoration: underline 3px;
+  text-underline-offset: 15px;
+}
 
 .iconNav {
   width: 35px;
