@@ -157,10 +157,12 @@ footer p {
 @media (max-width: 425px) {
   .infoCard {
     height: 100%;
+    width: 100%;
+    align-items: center;
   }
   .infoCard img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
   .infoCard div h6 {
     font-size: 13px;
@@ -360,7 +362,7 @@ body {
   box-sizing: border-box;
 }
 
-p {
+p, h6 {
   margin: 0;
 }
 
