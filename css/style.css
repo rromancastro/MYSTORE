@@ -93,6 +93,31 @@ nav {
     width: 30px;
   }
 }
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(66, 66, 66);
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+footer div svg {
+  width: 30px;
+  fill: #777777;
+}
+footer p {
+  color: #777777;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+
 .infoCard {
   display: flex;
   flex-direction: row;
@@ -250,11 +275,11 @@ nav {
 }
 
 .indexGrid {
+  position: relative;
   width: 100%;
-  height: 500px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px;
   grid-template-areas: "area3 area1" "area4 area1" "area2 area2";
   gap: 20px;
   padding: 20px;
@@ -319,7 +344,7 @@ nav {
   }
   .indexGrid {
     gap: 10px;
-    grid-template-rows: 140px 140px 140px 140px;
+    grid-template-rows: 140px 140px 140px;
   }
   .gridItem p {
     font-size: 25px;
