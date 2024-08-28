@@ -59,8 +59,7 @@ nav {
 }
 .navLinks .sit {
   color: #1E2A3D;
-  text-decoration: underline 3px;
-  text-underline-offset: 15px;
+  border-bottom: 2px solid black;
 }
 
 .iconNav {
@@ -222,6 +221,10 @@ footer p {
   background-color: #dddddd;
 }
 
+.infoProd {
+  gap: 5px;
+}
+
 .colores {
   display: flex;
   gap: 5px;
@@ -250,10 +253,19 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  card {
-    width: 100%;
+  .card {
+    width: 48%;
+  }
+  .card .foto {
+    height: 180px;
   }
 }
+.sectProducts {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+}
+
 .accountMain {
   display: flex;
   justify-content: center;
