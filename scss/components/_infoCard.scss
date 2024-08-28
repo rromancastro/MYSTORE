@@ -10,7 +10,7 @@
         height: 40%;
         background-color: red;
         filter: brightness(2.5);
-        border-radius: 50%;
+        border-radius: 13px;
         padding: 5px;
     }
     div {
@@ -41,7 +41,8 @@
     .infoCard {
         height: 100%;
         img {
-            height: 25%;
+            width: 25px;
+            height: 25px;
         }
         div {
             h6 {

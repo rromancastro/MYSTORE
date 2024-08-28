@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confort.CO</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -35,28 +36,28 @@
 
     <main>
         <section class="indexBanner">
-          <div id="carouselExampleIndicators" class="carousel slide">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" data-bs-interval="3000">
                 <div>
                   <p>GARANTÍA <br> de <br> CONFORT</p>
                   <p>¡Comprá ahora!</p>
                 </div>
                 <img src="./images/bannerIndex/pic1.jpg" alt="product">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="3000">
                 <div>
                   <p>GARANTÍA <br> de <br> CONFORT</p>
                   <p>¡Comprá ahora!</p>
                 </div>
                 <img src="./images/bannerIndex/pic2.jpg" alt="product">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="3000">
                 <div>
                   <p>GARANTÍA <br> de <br> CONFORT</p>
                   <p>¡Comprá ahora!</p>
@@ -106,21 +107,37 @@
           </article>
         </section>
         <section class="indexGrid">
-          <div class="grid1">
-            
+          <div class="gridItem grid1" data-aos="fade-up">
+            <a href="#">
+              <p>Living</p>
+              <img src="./images/gridIndex/pic1.avif" alt="product">
+            </a>
           </div>
-          <div class="grid2">
-            
+          <div class="gridItem grid2" data-aos="fade-up">
+            <a href="#">
+              <p>Dormitorio</p>
+              <img src="./images/gridIndex/pic2.avif" alt="product">
+            </a>
           </div>
-          <div class="grid3">
-            
+          <div class="gridItem grid3" data-aos="fade-up">
+            <a href="#">
+              <p>Comedor</p>
+              <img src="./images/gridIndex/pic3.avif" alt="product">
+            </a>
           </div>
-          <div class="grid4">
-            
+          <div class="gridItem grid4" data-aos="fade-up">
+            <a href="#">
+              <p>Oulet</p>
+              <img src="./images/gridIndex/pic4.avif" alt="product">
+            </a>
           </div>
         </section>
     </main>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

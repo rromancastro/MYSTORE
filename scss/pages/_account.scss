@@ -7,6 +7,7 @@
     background-color: #ffffff;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 40%;
     margin: 30px;
     padding: 30px;
@@ -20,6 +21,7 @@
     form {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 15px;
     }
 }
@@ -34,6 +36,7 @@
         font-weight: 500;
     }
     input {
+        width: 200px;
         border-radius: 5px;
         border: none;
         background-color: #E3ECEF;
@@ -48,6 +51,7 @@
     font-size: 15px;
     transition: 1s;
     color: $grey1;
+    width: 150px;
     &:hover {
         transform: scale(1.1);
     }
