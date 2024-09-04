@@ -3,6 +3,7 @@
     width: 24%;
     height: 100%;
     padding: 10px;
+    background-color: #ffffff;
     h6 {
         font-family: $font3;
         font-size: 20px;
@@ -24,6 +25,11 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        background-color: #F7F7F7;
+        margin-bottom: 10px;
+        &:hover {
+            opacity: .7;
+        }
         img {
             width: 100%;
             object-fit: cover;
@@ -45,7 +51,15 @@
 }
 
 .infoProd {
-    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.nombrePrecio {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
 }
 
 .colores {
@@ -79,7 +93,25 @@
     .card {
         width: 48%;
         .foto {
-            height: 180px;
+            height: 160px;
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .card {
+        h6 {
+            font-size: 13px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .colores {
+        div {
+            width: 15px;
+            height: 15px;
         }
     }
 }

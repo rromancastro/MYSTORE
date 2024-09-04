@@ -2,7 +2,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 1.3em;
-    background-color: #FFFFFF;
+    background-color: #F7F7F7;
 }
 
 .navBrand {
@@ -26,7 +26,7 @@ nav {
     margin-right: 30px;
     button {
         border: none;
-        background-color: #FFFFFF;
+        background-color: #F7F7F7;
         &:focus {
             transition: 0.5s;
             transform: rotate(-360deg);
@@ -68,7 +68,7 @@ nav {
     position: absolute;
     left: 0;
     width: 100%;
-    background-color: #FFFFFF;
+    background-color: #F7F7F7;
     z-index: 100;
     border-radius: 0 0 10px 10px;
 }

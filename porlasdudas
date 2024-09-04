@@ -9,3 +9,21 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </div>
+
+              <article class="card">
+                <div class="foto"><img src="../images/living/one1.webp" alt="producto"></div>
+                <div class="infoProd">
+                    <h6>Sofá Nordico de 3 cuerpos tela chenille.</h6>
+                    <p class="precio">$407.999</p>
+                    <p class="cuotas">Hasta 18 cuotas sin interes</p>
+                    <div class="colores">
+                        <div class="gris" tabindex="0"></div>
+                        <div class="rojo" tabindex="0"></div>
+                        <div class="azul" tabindex="0"></div>
+                        <div class="negro"></div>
+                    </div>
+                    <button>
+                        <p>Agregar al Carrito</p>
+                    </button>
+                </div>
+            </article>
