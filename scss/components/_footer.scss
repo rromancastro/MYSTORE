@@ -22,3 +22,18 @@ footer {
         font-size: 17px;
     }
 }
+
+@media (max-width: 425px) {
+    footer {
+        height: 100%;
+        gap: 5px;
+        p {
+            font-size: 13px;
+        }
+        div {
+            svg {
+                width: 20px;
+            }
+        }
+    }
+}

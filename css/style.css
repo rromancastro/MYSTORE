@@ -122,6 +122,18 @@ footer p {
   font-size: 17px;
 }
 
+@media (max-width: 425px) {
+  footer {
+    height: 100%;
+    gap: 5px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+  footer div svg {
+    width: 20px;
+  }
+}
 .infoCard {
   display: flex;
   flex-direction: row;
