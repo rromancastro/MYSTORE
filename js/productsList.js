@@ -18,7 +18,7 @@ let productos = [
         stock: "enabled"
     },
     {
-        class: "living",
+        class: "dormitorio",
         id:3, 
         name: "Sillon Sofa Trento 3 Cuerpos Chenille Jumper Antidesgarro", 
         price: 347.171, 

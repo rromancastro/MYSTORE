@@ -1,6 +1,7 @@
 const sectProducts = document.getElementById('sectProducts');
 
 function showProductsId(classProduct) {
+    document.title = localStorage.getItem('classSelected').charAt(0).toUpperCase() +  localStorage.getItem('classSelected').slice(1) +" - Confort.CO";
     productos.forEach(producto => {
         if (producto.class == classProduct) {
             const productoCard = `
@@ -33,7 +34,7 @@ function showProductsId(classProduct) {
     })
 }
 
-showProductsId("living");
+showProductsId(localStorage.getItem('classSelected'));
 
 
 
