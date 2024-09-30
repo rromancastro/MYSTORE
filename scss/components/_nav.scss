@@ -27,13 +27,10 @@ nav {
     button {
         border: none;
         background-color: #F7F7F7;
-        &:focus {
-            transition: 0.5s;
-            transform: rotate(-360deg);
-        }
         svg {
             margin: 0;
             fill: $azulOsc;
+            transition: transform 0.5s ease;
         }
     }
 }

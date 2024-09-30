@@ -34,6 +34,11 @@
             width: 100%;
             object-fit: cover;
         }
+        p {
+            position: absolute;
+            display: none;
+            background-color: rgba(194, 194, 194, 0.616);
+        }
     }
     button {
         padding: 3px 5px;
@@ -43,6 +48,9 @@
         transition: .3s;
         p {
             color: $grey2;
+        }
+        .noStock {
+            display: none;
         }
         &:hover {
             background-color: #dddddd;
@@ -86,6 +94,30 @@
     }
     .negro {
         background-color: black;
+    }
+}
+
+.disabled {
+    .foto {
+        filter: brightness(.7);
+        img {
+            opacity: .7;
+        }
+        p {
+            padding: 5px 10px;
+            display: inline-block;
+            color: white;
+            border-radius: 10px;
+        }
+    }
+    button {
+        background-color: #dddddd;
+        p {
+            display: none;
+        }
+        .noStock {
+            display: inline-block;
+        }
     }
 }
 
