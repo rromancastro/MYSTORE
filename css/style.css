@@ -804,6 +804,14 @@ footer p {
     font-size: 15px;
   }
 }
+@media (max-width: 425px) {
+  .card {
+    width: 45%;
+  }
+  #productsCartList .cardCartListInfo h3 {
+    font-size: 10px;
+  }
+}
 body {
   background-color: #ffffff;
 }
