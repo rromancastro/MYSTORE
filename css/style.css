@@ -815,6 +815,7 @@ footer p {
   }
   #productsCartList {
     width: 90vw;
+    min-height: 0;
   }
   #productsCartList .cardCartList .cardCartListInfo h3 {
     font-size: 13px;
@@ -826,7 +827,7 @@ footer p {
     height: 50px;
   }
   #total {
-    width: 20vw;
+    width: 90vw;
     padding: 10px;
   }
   #total h3 {

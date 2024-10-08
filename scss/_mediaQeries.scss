@@ -120,6 +120,7 @@
 
     #productsCartList {
         width: 90vw;
+        min-height: 0;
         .cardCartList {
             .cardCartListInfo {
                 h3 {
@@ -136,7 +137,7 @@
     }
 
     #total {
-        width: 20vw;
+        width: 90vw;
         padding: 10px;
         h3 {
             font-size: 20px;
