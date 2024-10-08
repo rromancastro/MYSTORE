@@ -112,12 +112,35 @@
         width: 45%;
     }
 
+    #cartPage {
+        gap: 5px;
+        padding: 25px;
+        flex-direction: column;
+    }
+
     #productsCartList {
-    .cardCartListInfo {
-        h3 {
-            font-size: 10px;
+        width: 90vw;
+        .cardCartList {
+            .cardCartListInfo {
+                h3 {
+                    font-size: 13px;
+                }
+                p {
+                    font-size: 10px;
+                }
+                img {
+                    height: 50px;
+                }
+            }
         }
-    }    
+    }
+
+    #total {
+        width: 20vw;
+        padding: 10px;
+        h3 {
+            font-size: 20px;
+        }
     }
     
 }

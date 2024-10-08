@@ -808,8 +808,29 @@ footer p {
   .card {
     width: 45%;
   }
-  #productsCartList .cardCartListInfo h3 {
+  #cartPage {
+    gap: 5px;
+    padding: 25px;
+    flex-direction: column;
+  }
+  #productsCartList {
+    width: 90vw;
+  }
+  #productsCartList .cardCartList .cardCartListInfo h3 {
+    font-size: 13px;
+  }
+  #productsCartList .cardCartList .cardCartListInfo p {
     font-size: 10px;
+  }
+  #productsCartList .cardCartList .cardCartListInfo img {
+    height: 50px;
+  }
+  #total {
+    width: 20vw;
+    padding: 10px;
+  }
+  #total h3 {
+    font-size: 20px;
   }
 }
 body {
