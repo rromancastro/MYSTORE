@@ -812,6 +812,8 @@ footer p {
     gap: 5px;
     padding: 25px;
     flex-direction: column;
+    min-height: 0;
+    height: 100%;
   }
   #productsCartList {
     width: 90vw;
@@ -829,6 +831,7 @@ footer p {
   #total {
     width: 90vw;
     padding: 10px;
+    min-height: 0;
   }
   #total h3 {
     font-size: 20px;

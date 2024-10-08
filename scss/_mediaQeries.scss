@@ -116,6 +116,8 @@
         gap: 5px;
         padding: 25px;
         flex-direction: column;
+        min-height: 0;
+        height: 100%;
     }
 
     #productsCartList {
@@ -139,6 +141,7 @@
     #total {
         width: 90vw;
         padding: 10px;
+        min-height: 0;
         h3 {
             font-size: 20px;
         }
