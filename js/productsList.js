@@ -1,31 +1,95 @@
 let productos = [
     {
         class: "living",
-        id:1, 
+        id: 1, 
         name: "Sofá Nordico de 3 cuerpos Tela Chenille", 
-        price: 407.999, 
-        img:'../images/living/id1.png', 
-        cuotas:"Hasta 18 cuotas sin interes",
-        stock: "enabled"
+        price: 407999, 
+        medidas: "Medidas: 1.8 m de ancho, 0.8 m de profundidad y 0.8 m de altura",
+        desc1: "Capacidad para 3 personas y soporte de hasta 350 kg de peso",
+        desc2: "Estructura de madera resistente y patas negras para mayor estabilidad",
+        img:'../images/living/id1', 
+        cuotas:"Hasta 18 cuotas sin interés",
+        stock: "enabled",
+        colors: "enabled"
     },
     {
         class: "living",
-        id:2, 
+        id: 2, 
         name: "Sillón Sofa Esquinero Tela Rustic", 
-        price: 582.749, 
-        img:'../images/living/id2.png', 
-        cuotas:"Hasta 18 cuotas sin interes",
-        stock: "enabled"
+        price: 582749,  
+        medidas: "Medidas: 1.8 m de ancho, 0.8 m de profundidad y 0.8 m de altura",
+        desc1: "Capacidad para 3 personas y soporte de hasta 350 kg de peso",
+        desc2: "Estructura de madera resistente y patas negras para mayor estabilidad",
+        img:'../images/living/id2', 
+        cuotas:"Hasta 18 cuotas sin interés",
+        stock: "enabled",
+        colors: "enabled"
     },
     {
-        class: "dormitorio",
-        id:3, 
+        class: "living",
+        id: 3, 
         name: "Sillon Sofa Trento 3 Cuerpos Chenille Jumper Antidesgarro", 
-        price: 347.171, 
-        img:'../images/living/id3.png', 
-        cuotas:"Hasta 18 cuotas sin interes",
-        stock: "enabled"
-    }
+        price: 347171,  
+        medidas: "Medidas: 1.8 m de ancho, 0.8 m de profundidad y 0.8 m de altura",
+        desc1: "Capacidad para 3 personas y soporte de hasta 350 kg de peso",
+        desc2: "Estructura de madera resistente y patas negras para mayor estabilidad",
+        img:'../images/living/id3', 
+        cuotas:"Hasta 18 cuotas sin interés",
+        stock: "enabled",
+        colors: "enabled"
+    },
+    {
+        class: "comedor",
+        id: 4, 
+        name: "Juego Comedor Nórdico Mesa Escandinava 120 + 4 Sillas Eames", 
+        price: 275148,  
+        medidas: "Medidas: 70 cm de ancho, 120 cm de largo y 75 cm de altura",
+        desc1: "Ofrece alta resistencia y durabilidad por su resistencia al calor y por no absorber la humedad.",
+        desc2: "No cuenta con poros en los que se pueda acumular la suciedad o desarrollar microorganismos que contaminen los alimentos o que generen malos olores.",
+        img:'../images/comedor/id4', 
+        cuotas:"Hasta 18 cuotas sin interés",
+        stock: "enabled",
+        colors: "disabled"
+    },
+    {
+        class: "comedor",
+        id: 5, 
+        name: "Combo Escandinavo Extensible Mesa 120 A 160 + 4 Sillas Tulip", 
+        price: 390199,  
+        medidas: "Medidas: 70 cm de ancho, 120 cm de largo y 75 cm de altura",
+        desc1: "Ofrece alta resistencia y durabilidad por su resistencia al calor y por no absorber la humedad.",
+        desc2: "No cuenta con poros en los que se pueda acumular la suciedad o desarrollar microorganismos que contaminen los alimentos o que generen malos olores.",
+        img:'../images/comedor/id5', 
+        cuotas:"Hasta 18 cuotas sin interés",
+        stock: "enabled",
+        colors: "disabled"
+    },
+    {
+        class: "comedor",
+        id: 6, 
+        name: "Banqueta Premium Alta Desayunador Taburete Silla Bar Barra", 
+        price: 135999,  
+        medidas: "Medidas: 70 cm de ancho, 120 cm de largo y 75 cm de altura",
+        desc1: "Ofrece alta resistencia y durabilidad por su resistencia al calor y por no absorber la humedad.",
+        desc2: "No cuenta con poros en los que se pueda acumular la suciedad o desarrollar microorganismos que contaminen los alimentos o que generen malos olores.",
+        img:'../images/comedor/id6', 
+        cuotas:"Hasta 18 cuotas sin interés",
+        stock: "enabled",
+        colors: "enabled"
+    },
+    {
+        class: "comedor",
+        id: 7, 
+        name: "Mesa Barra De Cocina Desayunador Para 4 Personas 150x60 Cm", 
+        price: 270000,  
+        medidas: "Medidas: 70 cm de ancho, 120 cm de largo y 75 cm de altura",
+        desc1: "Ofrece alta resistencia y durabilidad por su resistencia al calor y por no absorber la humedad.",
+        desc2: "No cuenta con poros en los que se pueda acumular la suciedad o desarrollar microorganismos que contaminen los alimentos o que generen malos olores.",
+        img:'../images/comedor/id7', 
+        cuotas:"Hasta 18 cuotas sin interés",
+        stock: "enabled",
+        colors: "disabled"
+    },
 ];
 
 

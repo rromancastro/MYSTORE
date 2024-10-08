@@ -6,6 +6,8 @@ iconNav.onclick = () => {
     iconNav.style.transform = `rotate(${rotacion}deg)`;
 }
 
+
+//Logica de Links
 let index = document.querySelector('.navBrand');
 let living = document.getElementById('living');
 let dormitorio = document.getElementById('dormitorio');
@@ -14,31 +16,31 @@ let outlet = document.getElementById('outlet');
 let selectedClass = "";
 
 index.onclick = () => {
-    localStorage.removeItem('classSelected');
-    selectedClass = localStorage.setItem('classSelected', 'index');
+    sessionStorage.removeItem('classSelected');
+    selectedClass = sessionStorage.setItem('classSelected', 'index');
 }
 
 living.onclick = () => {
-    localStorage.removeItem('classSelected');
-    selectedClass = localStorage.setItem('classSelected', 'living');
+    sessionStorage.removeItem('classSelected');
+    selectedClass = sessionStorage.setItem('classSelected', 'living');
 }
 
 dormitorio.onclick = () => {
-    localStorage.removeItem('classSelected');
-    selectedClass = localStorage.setItem('classSelected', 'dormitorio');
+    sessionStorage.removeItem('classSelected');
+    selectedClass = sessionStorage.setItem('classSelected', 'dormitorio');
 }
 
 comedor.onclick = () => {
-    localStorage.removeItem('classSelected');
-    selectedClass = localStorage.setItem('classSelected', 'comedor');
+    sessionStorage.removeItem('classSelected');
+    selectedClass = sessionStorage.setItem('classSelected', 'comedor');
 }
 
 outlet.onclick = () => {
-    localStorage.removeItem('classSelected');
-    selectedClass = localStorage.setItem('classSelected', 'outlet');
+    sessionStorage.removeItem('classSelected');
+    selectedClass = sessionStorage.setItem('classSelected', 'outlet');
 }
 
-switch (localStorage.getItem('classSelected')) {
+switch (sessionStorage.getItem('classSelected')) {
     case 'living':
         living.className = 'sit';
         break;
@@ -50,6 +52,13 @@ switch (localStorage.getItem('classSelected')) {
         break;
     case 'outlet':
         outlet.className = 'sit'
+        break;
+    case 'index':
+        living.className = ''
+        dormitorio.className = ''
+        comedor.className = ''
+        outlet.className = ''
+
         break;
     default:
         break;

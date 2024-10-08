@@ -6,6 +6,7 @@ nav {
   align-items: center;
   padding: 1.3em;
   background-color: #F7F7F7;
+  height: 10vh;
 }
 
 .navBrand {
@@ -189,7 +190,13 @@ footer p {
   width: 24%;
   height: 100%;
   padding: 10px;
-  background-color: #ffffff;
+}
+.card a {
+  color: #3b3b3b;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card h6 {
   font-family: "Montserrat", sans-serif;
@@ -214,13 +221,15 @@ footer p {
   align-items: center;
   background-color: #F7F7F7;
   margin-bottom: 10px;
+  padding: 20px;
 }
 .card .foto:hover {
   opacity: 0.7;
 }
 .card .foto img {
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 .card .foto p {
   position: absolute;
@@ -247,6 +256,8 @@ footer p {
 .infoProd {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   gap: 3px;
 }
 
@@ -254,33 +265,6 @@ footer p {
   display: flex;
   justify-content: space-between;
   gap: 4px;
-}
-
-.colores {
-  display: flex;
-  gap: 5px;
-  margin: 5px 0;
-}
-.colores div {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  transition: 0.2s;
-}
-.colores div:focus {
-  border: 3px solid rgb(185, 185, 185);
-}
-.colores .gris {
-  background-color: grey;
-}
-.colores .rojo {
-  background-color: rgb(158, 4, 4);
-}
-.colores .azul {
-  background-color: rgb(0, 0, 160);
-}
-.colores .negro {
-  background-color: black;
 }
 
 .disabled .foto {
@@ -327,8 +311,140 @@ footer p {
 }
 #sectProducts {
   width: 100%;
+  min-height: 85vh;
   display: flex;
+  justify-content: center;
+  padding: 35px;
+  flex-wrap: wrap;
+}
+
+.productInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98vw;
+  min-height: 90vh;
+  padding: 90px;
+  gap: 25px;
+}
+
+.fotos {
+  display: flex;
+  justify-content: space-between;
+  width: 45vw;
+  height: 70vh;
+  order: 2;
   padding: 15px;
+  gap: 15px;
+}
+.fotos .carousel-item {
+  width: 30vw;
+  border-radius: 15px;
+  background-color: #F7F7F7;
+}
+.fotos .carousel-item img {
+  filter: brightness(0.95);
+  width: 30vw;
+  height: 70vh;
+  object-fit: contain;
+}
+.fotos .carouselSelect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70vh;
+  gap: 15px;
+}
+.fotos .carouselSelect button {
+  border: none;
+  background-color: #F7F7F7;
+  transition: 0.5s;
+}
+.fotos .carouselSelect button:hover {
+  opacity: 0.7;
+}
+.fotos .carouselSelect img {
+  width: 15vw;
+  height: 21vh;
+  object-fit: contain;
+}
+.fotos p {
+  display: none;
+}
+
+#disabled {
+  display: none;
+}
+
+.infoProdPage {
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.infoProdPage h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+}
+.infoProdPage p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.infoProdPage div {
+  display: flex;
+  justify-content: space-between;
+}
+.infoProdPage div .precio {
+  font-size: 22px;
+}
+.infoProdPage div .cuotas {
+  font-size: 22px;
+  color: green;
+}
+.infoProdPage ul li p {
+  font-size: 18px;
+}
+.infoProdPage button {
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.infoProdPage button .noStock {
+  position: absolute;
+  display: none;
+}
+.infoProdPage button:hover {
+  background-color: #dddddd;
+}
+
+#colores {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+#colores div {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+#colores div:focus {
+  border: 3px solid rgb(185, 185, 185);
+}
+#colores .gris {
+  background-color: grey;
+}
+#colores .rojo {
+  background-color: rgb(158, 4, 4);
+}
+#colores .azul {
+  background-color: rgb(0, 0, 160);
+}
+#colores .negro {
+  background-color: black;
 }
 
 .accountMain {
@@ -406,7 +522,7 @@ footer p {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 700px;
+  height: 90vh;
   position: absolute;
   z-index: 2;
   justify-content: center;
@@ -424,7 +540,7 @@ footer p {
 .carousel-item img {
   object-fit: cover;
   width: 100%;
-  height: 700px;
+  height: 90vh;
   z-index: 1;
   filter: brightness(0.6);
 }
@@ -510,6 +626,182 @@ footer p {
   }
   .gridItem p {
     font-size: 25px;
+  }
+}
+#cartPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  gap: 15px;
+  padding: 25px;
+}
+
+#productsCartList {
+  width: 40vw;
+  height: 100%;
+  min-height: 80vh;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#productsCartList .cardCartList {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+}
+#productsCartList .cardCartList .cardCartListInfo {
+  width: 80%;
+}
+#productsCartList .cardCartList .cardCartListInfo h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #3b3b3b;
+  font-size: 17px;
+  margin: 0;
+}
+#productsCartList .cardCartList .cardCartListInfo p {
+  font-family: "Nunito", sans-serif;
+  color: #5F6368;
+  font-size: 14px;
+}
+#productsCartList .cardCartList .cardCartListInfo button {
+  border: none;
+  background-color: rgb(190, 26, 26);
+  color: rgb(231, 231, 231);
+  padding: 3px 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  border-radius: 5px;
+}
+#productsCartList .cardCartList img {
+  width: 20%;
+  height: 85px;
+  object-fit: contain;
+}
+
+#total {
+  width: 40vw;
+  height: 100%;
+  min-height: 80vh;
+  padding: 20px;
+}
+#total h3 {
+  font-family: "Nunito", sans-serif;
+  color: #3b3b3b;
+  font-size: 40px;
+}
+#total button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgb(112, 231, 132);
+  font-family: "Nunito", sans-serif;
+  color: #3b3b3b;
+}
+#total button a {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+@media (max-width: 768px) {
+  #sectProducts {
+    padding: 10px;
+  }
+  .card {
+    width: 30%;
+  }
+  .card h6 {
+    font-size: 18px;
+  }
+  .card p {
+    font-size: 13px;
+  }
+  .productInfo {
+    padding: 40px;
+  }
+  .productInfo .infoProdPage {
+    gap: 10px;
+  }
+  .productInfo .infoProdPage h6 {
+    font-size: 22px;
+  }
+  .productInfo .infoProdPage p {
+    font-size: 13px;
+  }
+  #colores div {
+    width: 20px;
+    height: 20px;
+  }
+  footer {
+    height: 100%;
+    gap: 5px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+  footer div svg {
+    width: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .nombrePrecio {
+    display: flex;
+    flex-direction: column;
+  }
+  .productInfo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    gap: 0;
+  }
+  .productInfo .fotos {
+    order: 1;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .productInfo .fotos .carousel-item {
+    width: 70vw;
+    height: 40vh;
+  }
+  .productInfo .fotos .carousel-item img {
+    width: 70vw;
+    height: 100%;
+  }
+  .productInfo .fotos .carouselSelect {
+    flex-direction: row;
+    height: 15vh;
+    width: 70vw;
+    gap: 5px;
+  }
+  .productInfo .fotos .carouselSelect img {
+    height: 100%;
+    width: 22vw;
+    padding: 10px;
+  }
+  .productInfo .infoProdPage {
+    order: 2;
+    width: 70vw;
+  }
+  .productInfo .infoProdPage h6 {
+    font-size: 30px;
+  }
+  .productInfo .infoProdPage p {
+    font-size: 15px;
   }
 }
 body {

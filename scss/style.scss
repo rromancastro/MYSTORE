@@ -8,8 +8,11 @@
 @import 'components/infoCard';
 @import 'components/productCard';
 @import 'components/sectionProducts';
+@import 'components/productInfo';
 @import 'pages/account';
 @import 'pages/index';
+@import 'pages/cart';
+@import 'mediaQeries';
 
 body {
     background-color: #ffffff;
