@@ -52,5 +52,8 @@ function removeItem(idRemove) {
   console.log(cartProducts);
   guardarCarrito(cartProducts);
   cargarCarrito();
-  location.reload();
+  productsCartList.innerHTML = '';
+  agregarCarritoAlDOM();
+  total = cartProducts.reduce((acumulador, producto) => acumulador + producto.price, 0);
+  totalH3.innerText = "Total: $" + total.toLocaleString();
 }

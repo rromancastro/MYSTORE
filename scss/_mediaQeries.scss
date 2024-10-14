@@ -35,7 +35,21 @@
         }
     }
 
+    //CART
 
+    #cartPage {
+        padding: 15px;
+    }
+
+    #offcanvasNavbar {
+        width: 70vw;
+    }
+
+    #total {
+        h3 {
+            font-size: 25px;
+        }
+    }
 
 
     footer {
@@ -114,14 +128,15 @@
 
     #cartPage {
         gap: 5px;
-        padding: 25px;
-        flex-direction: column;
-        min-height: 90vh;
-        height: 100%;
+        padding: 13px;
+    }
+
+    #offcanvasNavbar {
+        width: 90vw;
     }
 
     #productsCartList {
-        width: 90vw;
+        width: 100%;
         min-height: 0;
         .cardCartList {
             .cardCartListInfo {

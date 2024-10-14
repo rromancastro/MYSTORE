@@ -630,29 +630,30 @@ footer p {
 }
 #cartPage {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh;
-  gap: 15px;
-  padding: 25px;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px;
+  margin-top: 10vh;
+}
+
+#offcanvasNavbar {
+  width: 40vw;
 }
 
 #cantidad {
   display: flex;
   align-items: center;
   gap: 3px;
-  margin-right: 3px;
 }
 #cantidad p {
   font-family: "Nunito", sans-serif;
   color: #5F6368;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 #productsCartList {
-  width: 40vw;
+  width: 100%;
   height: 100%;
-  min-height: 80vh;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -664,9 +665,10 @@ footer p {
 }
 #productsCartList .cardCartList {
   display: flex;
+  gap: 5px;
   padding: 10px;
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 5px;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
@@ -678,13 +680,13 @@ footer p {
 #productsCartList .cardCartList .cardCartListInfo h3 {
   font-family: "Montserrat", sans-serif;
   color: #3b3b3b;
-  font-size: 17px;
+  font-size: 15px;
   margin: 0;
 }
 #productsCartList .cardCartList .cardCartListInfo p {
   font-family: "Nunito", sans-serif;
   color: #5F6368;
-  font-size: 14px;
+  font-size: 13px;
 }
 #productsCartList .cardCartList .cardCartListInfo button {
   border: none;
@@ -702,7 +704,7 @@ footer p {
 }
 
 #total {
-  width: 40vw;
+  width: 100%;
   height: 100%;
   min-height: 80vh;
   padding: 20px;
@@ -753,6 +755,15 @@ footer p {
   #colores div {
     width: 20px;
     height: 20px;
+  }
+  #cartPage {
+    padding: 15px;
+  }
+  #offcanvasNavbar {
+    width: 70vw;
+  }
+  #total h3 {
+    font-size: 25px;
   }
   footer {
     height: 100%;
@@ -822,13 +833,13 @@ footer p {
   }
   #cartPage {
     gap: 5px;
-    padding: 25px;
-    flex-direction: column;
-    min-height: 90vh;
-    height: 100%;
+    padding: 13px;
+  }
+  #offcanvasNavbar {
+    width: 90vw;
   }
   #productsCartList {
-    width: 90vw;
+    width: 100%;
     min-height: 0;
   }
   #productsCartList .cardCartList .cardCartListInfo h3 {

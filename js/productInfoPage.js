@@ -2,6 +2,7 @@ const productInfoPage = document.querySelector('#productInfoPage');
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
+
 function showProductInfoPage (idBuscado) {
     let producto = productos.find(productos => productos.id == idBuscado);
     document.title = "Confort.CO - " + producto.name;
@@ -62,13 +63,20 @@ function showProductInfoPage (idBuscado) {
 
     // LOGICA AGREGAR AL CARRITO
     let addToCart = document.getElementById('addToCart');
+    const precioEstatico = producto.price;
+
 
     addToCart.addEventListener('click', function(e) {
       if(cartProducts.includes(producto)) {
         producto.cantidad += 1;
-        producto.price = producto.price * 2;
+        producto.price = precioEstatico * producto.cantidad;
         console.log(cartProducts);
         guardarCarrito(cartProducts);
+        cargarCarrito();
+        productsCartList.innerHTML = '';
+        agregarCarritoAlDOM();
+        total = cartProducts.reduce((acumulador, producto) => acumulador + producto.price, 0);
+        totalH3.innerText = "Total: $" + total.toLocaleString();
         Swal.fire({
           title: "¡El producto fue agregado al carrito!",
           icon: "success"
@@ -78,6 +86,11 @@ function showProductInfoPage (idBuscado) {
         producto.cantidad += 1;
         console.log(cartProducts);
         guardarCarrito(cartProducts);
+        cargarCarrito();
+        productsCartList.innerHTML = '';
+        agregarCarritoAlDOM();
+        total = cartProducts.reduce((acumulador, producto) => acumulador + producto.price, 0);
+        totalH3.innerText = "Total: $" + total.toLocaleString();
         Swal.fire({
           title: "¡El producto fue agregado al carrito!",
           icon: "success"
