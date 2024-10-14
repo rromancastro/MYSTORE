@@ -10,7 +10,8 @@ let productos = [
         img:'../images/living/id1', 
         cuotas:"Hasta 18 cuotas sin interés",
         stock: "enabled",
-        colors: "enabled"
+        colors: "enabled",
+        cantidad: 0
     },
     {
         class: "living",
@@ -22,8 +23,9 @@ let productos = [
         desc2: "Estructura de madera resistente y patas negras para mayor estabilidad",
         img:'../images/living/id2', 
         cuotas:"Hasta 18 cuotas sin interés",
-        stock: "enabled",
-        colors: "enabled"
+        stock: "disabled",
+        colors: "disabled",
+        cantidad: 0
     },
     {
         class: "living",
@@ -36,7 +38,8 @@ let productos = [
         img:'../images/living/id3', 
         cuotas:"Hasta 18 cuotas sin interés",
         stock: "enabled",
-        colors: "enabled"
+        colors: "enabled",
+        cantidad: 0
     },
     {
         class: "comedor",
@@ -49,7 +52,8 @@ let productos = [
         img:'../images/comedor/id4', 
         cuotas:"Hasta 18 cuotas sin interés",
         stock: "enabled",
-        colors: "disabled"
+        colors: "disabled",
+        cantidad: 0
     },
     {
         class: "comedor",
@@ -62,7 +66,8 @@ let productos = [
         img:'../images/comedor/id5', 
         cuotas:"Hasta 18 cuotas sin interés",
         stock: "enabled",
-        colors: "disabled"
+        colors: "disabled",
+        cantidad: 0
     },
     {
         class: "comedor",
@@ -75,7 +80,8 @@ let productos = [
         img:'../images/comedor/id6', 
         cuotas:"Hasta 18 cuotas sin interés",
         stock: "enabled",
-        colors: "enabled"
+        colors: "enabled",
+        cantidad: 0
     },
     {
         class: "comedor",
@@ -88,7 +94,8 @@ let productos = [
         img:'../images/comedor/id7', 
         cuotas:"Hasta 18 cuotas sin interés",
         stock: "enabled",
-        colors: "disabled"
+        colors: "disabled",
+        cantidad: 0
     },
 ];
 

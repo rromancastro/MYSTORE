@@ -62,12 +62,42 @@ function showProductInfoPage (idBuscado) {
 
     // LOGICA AGREGAR AL CARRITO
     let addToCart = document.getElementById('addToCart');
+
     addToCart.addEventListener('click', function(e) {
-      cartProducts.push(producto);
-      console.log(cartProducts);
-      guardarCarrito(cartProducts);
+      if(cartProducts.includes(producto)) {
+        producto.cantidad += 1;
+        producto.price = producto.price * 2;
+        console.log(cartProducts);
+        guardarCarrito(cartProducts);
+        Swal.fire({
+          title: "¡El producto fue agregado al carrito!",
+          icon: "success"
+        });
+      } else {
+        cartProducts.push(producto);
+        producto.cantidad += 1;
+        console.log(cartProducts);
+        guardarCarrito(cartProducts);
+        Swal.fire({
+          title: "¡El producto fue agregado al carrito!",
+          icon: "success"
+        });
+      }
     })
 
+
+    // addToCart.addEventListener('click', function(e) {
+    //   if(cartProducts.find(producto)) {}
+
+    //   cartProducts.push(producto);
+    //   producto.cantidad += 1;
+    //   console.log(cartProducts);
+    //   guardarCarrito(cartProducts);
+    //   Swal.fire({
+    //     title: "¡El producto fue agregado al carrito!",
+    //     icon: "success"
+    //   });
+    // })
 
 }
 

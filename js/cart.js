@@ -2,7 +2,6 @@
 function guardarCarrito(carrito) {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
-
   
   // AGREGAR AL DOM
   const productsCartList = document.getElementById('productsCartList');
@@ -13,11 +12,15 @@ function guardarCarrito(carrito) {
         card.id = producto.id;
 
         card.innerHTML = `
+            <div id="cantidad">
+              <p>${producto.cantidad}</p>
+              <p>x</p>
+            </div>
             <div class="cardCartListInfo">
                 <h3>${producto.name}</h3>
                 <p>ID: ${producto.id}</p>
                 <p>$${producto.price.toLocaleString()}
-                <button id="removeItem">Eliminar</button></p>
+                <button id="removeItem" onclick="removeItem(${producto.id})">Eliminar</button></p>
             </div>
             <img src="${producto.img}.png" alt="">
             `;
@@ -40,5 +43,14 @@ let totalH3 = document.getElementById('totalH3');
 
   console.log(cartProducts);
   agregarCarritoAlDOM();
-//   localStorage.removeItem('carrito');
+  // localStorage.removeItem('carrito');
 
+
+function removeItem(idRemove) {
+  let newCart = cartProducts.filter(producto => producto.id !== idRemove);
+  cartProducts = newCart;
+  console.log(cartProducts);
+  guardarCarrito(cartProducts);
+  cargarCarrito();
+  location.reload();
+}

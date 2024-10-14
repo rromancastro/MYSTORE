@@ -637,6 +637,18 @@ footer p {
   padding: 25px;
 }
 
+#cantidad {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-right: 3px;
+}
+#cantidad p {
+  font-family: "Nunito", sans-serif;
+  color: #5F6368;
+  font-size: 15px;
+}
+
 #productsCartList {
   width: 40vw;
   height: 100%;
@@ -812,7 +824,7 @@ footer p {
     gap: 5px;
     padding: 25px;
     flex-direction: column;
-    min-height: 0;
+    min-height: 90vh;
     height: 100%;
   }
   #productsCartList {

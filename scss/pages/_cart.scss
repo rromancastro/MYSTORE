@@ -7,6 +7,18 @@
     padding: 25px;
 }
 
+#cantidad {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-right: 3px;
+    p {
+        font-family: $font2;
+        color: $grey1;
+        font-size: 15px;
+    }
+}
+
 #productsCartList {
     width: 40vw;
     height: 100%;

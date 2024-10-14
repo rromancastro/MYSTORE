@@ -13,7 +13,14 @@ let living = document.getElementById('living');
 let dormitorio = document.getElementById('dormitorio');
 let comedor = document.getElementById('comedor');
 let outlet = document.getElementById('outlet');
+
+let livingCard = document.getElementById('livingCard');
+let dormitorioCard = document.getElementById('dormitorioCard');
+let comedorCard = document.getElementById('comedorCard');
+let outletCard = document.getElementById('outletCard');
+
 let selectedClass = "";
+
 
 index.onclick = () => {
     sessionStorage.removeItem('classSelected');
@@ -40,24 +47,48 @@ outlet.onclick = () => {
     selectedClass = sessionStorage.setItem('classSelected', 'outlet');
 }
 
+if (livingCard && dormitorioCard && comedorCard && outletCard) {
+    livingCard.onclick = () => {
+        sessionStorage.removeItem('classSelected');
+        selectedClass = sessionStorage.setItem('classSelected', 'living');
+    }
+
+    dormitorioCard.onclick = () => {
+        sessionStorage.removeItem('classSelected');
+        selectedClass = sessionStorage.setItem('classSelected', 'dormitorio');
+    }
+
+    comedorCard.onclick = () => {
+        sessionStorage.removeItem('classSelected');
+        selectedClass = sessionStorage.setItem('classSelected', 'comedor');
+    }
+
+    outletCard.onclick = () => {
+        sessionStorage.removeItem('classSelected');
+        selectedClass = sessionStorage.setItem('classSelected', 'outlet');
+    }
+}
+
+
+
 switch (sessionStorage.getItem('classSelected')) {
     case 'living':
         living.className = 'sit';
         break;
     case 'dormitorio':
-        dormitorio.className = 'sit'
+        dormitorio.className = 'sit';
         break;
     case 'comedor':
-        comedor.className = 'sit'
+        comedor.className = 'sit';
         break;
     case 'outlet':
-        outlet.className = 'sit'
+        outlet.className = 'sit';
         break;
     case 'index':
-        living.className = ''
-        dormitorio.className = ''
-        comedor.className = ''
-        outlet.className = ''
+        living.className = '';
+        dormitorio.className = '';
+        comedor.className = '';
+        outlet.className = '';
 
         break;
     default:
