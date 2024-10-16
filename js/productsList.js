@@ -23,7 +23,7 @@ let productos = [
         desc2: "Estructura de madera resistente y patas negras para mayor estabilidad",
         img:'../images/living/id2', 
         cuotas:"Hasta 18 cuotas sin interés",
-        stock: "disabled",
+        stock: "enabled",
         colors: "disabled",
         cantidad: 0
     },

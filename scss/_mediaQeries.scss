@@ -1,6 +1,6 @@
 @media(max-width: 768px) {
     // SECTION PRODUCTS
-    #sectProducts {
+    .sectProducts {
         padding: 10px;
     }
     .card {
@@ -122,6 +122,10 @@
 }
 
 @media (max-width: 425px) {
+    .sectProducts {
+        padding: 5px;
+    }
+
     .card {
         width: 45%;
     }

@@ -83,7 +83,8 @@ function showProductInfoPage (idBuscado) {
         });
       } else {
         cartProducts.push(producto);
-        producto.cantidad += 1;
+        producto.cantidad = 1;
+        producto.price = precioEstatico;
         console.log(cartProducts);
         guardarCarrito(cartProducts);
         cargarCarrito();
@@ -98,19 +99,6 @@ function showProductInfoPage (idBuscado) {
       }
     })
 
-
-    // addToCart.addEventListener('click', function(e) {
-    //   if(cartProducts.find(producto)) {}
-
-    //   cartProducts.push(producto);
-    //   producto.cantidad += 1;
-    //   console.log(cartProducts);
-    //   guardarCarrito(cartProducts);
-    //   Swal.fire({
-    //     title: "¡El producto fue agregado al carrito!",
-    //     icon: "success"
-    //   });
-    // })
 
 }
 

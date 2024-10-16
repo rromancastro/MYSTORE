@@ -1,6 +1,7 @@
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1.3em;
     background-color: #F7F7F7;
     height: 10vh;
@@ -10,9 +11,12 @@ nav {
     font-family: $font1;
     font-weight: 600;
     font-size: 25px;
-    margin-right: auto;
     text-decoration: none;
     color: $grey2;
+}
+
+.navUtilityes {
+    display: flex;
 }
 
 .navItems {
@@ -60,6 +64,7 @@ nav {
 .iconNav {
     width: 35px;
     height: 100%;
+    fill: $azulOsc;
 }
 
 #collapseExample {
@@ -71,24 +76,73 @@ nav {
     border-radius: 0 0 10px 10px;
 }
 
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 5px 10px;
+    border-radius: 10px;
+    input {
+        border: none;
+        background-color: #fafafa;
+        outline: none;
+        width: 80px;
+        height: 100%;
+        transition: 1s;
+        &:focus {
+            width: 400px;
+        }
+    }
+    a {
+        border: none;
+        background-color: #fafafa;
+        svg {
+            width: 25px;
+            height: 100%;
+            fill: $azulOsc;
+        }
+    }
+}
+
 @media (max-width: 768px){
     nav {
         justify-content: space-between;
     }
     .navBrand {
-        order: 10;
+        order: 2;
         margin: 0;
     }
-    .dropdown {
+    .navUtilityes {
+        order: 3;
+        gap: 5px;
+    }
+    .searchContainer {
         order: 1;
+        input {
+            &:focus {
+                width: 30vw;
+            }
+        }
+    }
+    .dropp {
+        margin-right: 0;
     }
     .navItems {
-        order: 20;
-        gap: 10px;
+        width: 15vw;
+        gap: 5px;
     }
 }
 
 @media (max-width: 425px){
+    .searchContainer {
+        input {
+            width: 5vw;
+            &:focus {
+                width: 50vw;
+            }
+        }
+    }
     .iconNav {
         width: 30px;
     }

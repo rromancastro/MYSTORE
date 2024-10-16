@@ -4,6 +4,7 @@
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 1.3em;
   background-color: #F7F7F7;
   height: 10vh;
@@ -13,9 +14,12 @@ nav {
   font-family: "Kanit", sans-serif;
   font-weight: 600;
   font-size: 25px;
-  margin-right: auto;
   text-decoration: none;
   color: #3b3b3b;
+}
+
+.navUtilityes {
+  display: flex;
 }
 
 .navItems {
@@ -63,6 +67,7 @@ nav {
 .iconNav {
   width: 35px;
   height: 100%;
+  fill: #1E2A3D;
 }
 
 #collapseExample {
@@ -74,23 +79,68 @@ nav {
   border-radius: 0 0 10px 10px;
 }
 
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.searchContainer input {
+  border: none;
+  background-color: #fafafa;
+  outline: none;
+  width: 80px;
+  height: 100%;
+  transition: 1s;
+}
+.searchContainer input:focus {
+  width: 400px;
+}
+.searchContainer a {
+  border: none;
+  background-color: #fafafa;
+}
+.searchContainer a svg {
+  width: 25px;
+  height: 100%;
+  fill: #1E2A3D;
+}
+
 @media (max-width: 768px) {
   nav {
     justify-content: space-between;
   }
   .navBrand {
-    order: 10;
+    order: 2;
     margin: 0;
   }
-  .dropdown {
+  .navUtilityes {
+    order: 3;
+    gap: 5px;
+  }
+  .searchContainer {
     order: 1;
   }
+  .searchContainer input:focus {
+    width: 30vw;
+  }
+  .dropp {
+    margin-right: 0;
+  }
   .navItems {
-    order: 20;
-    gap: 10px;
+    width: 15vw;
+    gap: 5px;
   }
 }
 @media (max-width: 425px) {
+  .searchContainer input {
+    width: 5vw;
+  }
+  .searchContainer input:focus {
+    width: 50vw;
+  }
   .iconNav {
     width: 30px;
   }
@@ -309,7 +359,7 @@ footer p {
     height: 15px;
   }
 }
-#sectProducts {
+.sectProducts {
   width: 100%;
   min-height: 85vh;
   display: flex;
@@ -728,7 +778,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  #sectProducts {
+  .sectProducts {
     padding: 10px;
   }
   .card {
@@ -828,6 +878,9 @@ footer p {
   }
 }
 @media (max-width: 425px) {
+  .sectProducts {
+    padding: 5px;
+  }
   .card {
     width: 45%;
   }
