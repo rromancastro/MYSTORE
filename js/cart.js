@@ -45,8 +45,7 @@ let totalH3 = document.getElementById('totalH3');
   agregarCarritoAlDOM();
   // localStorage.removeItem('carrito');
 
-  let producto = productos.find(productos => productos.id == idBuscado);
-  const priceEstatico = producto.price;
+  // const priceEstatico = producto.price;
 
 function removeItem(idRemove) {
   let newCart = cartProducts.filter(producto => producto.id !== idRemove);

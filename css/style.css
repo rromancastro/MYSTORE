@@ -886,7 +886,7 @@ footer p {
   }
   #cartPage {
     gap: 5px;
-    padding: 13px;
+    padding: 23px;
   }
   #offcanvasNavbar {
     width: 90vw;
@@ -908,9 +908,20 @@ footer p {
     width: 90vw;
     padding: 10px;
     min-height: 0;
+    display: flex;
+    flex-direction: column;
   }
   #total h3 {
     font-size: 20px;
+    text-wrap: wrap;
+    padding: 10px;
+  }
+  #total div {
+    display: flex;
+    flex-direction: column;
+  }
+  #total div button {
+    width: 50vw;
   }
 }
 body {

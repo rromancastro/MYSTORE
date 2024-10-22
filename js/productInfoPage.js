@@ -102,4 +102,5 @@ function showProductInfoPage (idBuscado) {
 
 }
 
+console.log("id buscado " + sessionStorage.getItem('idSelected'));
 showProductInfoPage(sessionStorage.getItem('idSelected'));
