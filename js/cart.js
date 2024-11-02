@@ -2,6 +2,17 @@
 function guardarCarrito(carrito) {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
+
+//API DOLARES
+fetch("https://dolarapi.com/v1/dolares")
+  .then(response => response.json())
+  .then(data =>{
+    data.forEach(dolar => {
+      let brand = document.getElementById('dolarh3');
+      brand.innerText = "Valor del Dolar: " + `${dolar.venta}`
+    })
+  })
+
   
   // AGREGAR AL DOM
   const productsCartList = document.getElementById('productsCartList');

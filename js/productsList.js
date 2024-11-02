@@ -97,6 +97,76 @@ let productos = [
         colors: "disabled",
         cantidad: 0
     },
+    {
+        class: "living",
+        id: 8, 
+        name: "Sillon Trento 1 Cuerpo Chenille Jumper", 
+        price: 210393,  
+        medidas: "Medidas: 1 m de ancho, 0.8 m de profundidad y 0.8 m de altura",
+        desc1: "Ofrece alta resistencia y durabilidad por su resistencia al calor y por no absorber la humedad.",
+        desc2: "No cuenta con poros en los que se pueda acumular la suciedad o desarrollar microorganismos que contaminen los alimentos o que generen malos olores.",
+        img:'../images/living/id8', 
+        cuotas:"Hasta 6 cuotas sin interés",
+        stock: "enabled",
+        colors: "enabled",
+        cantidad: 0
+    },
+    {
+        class: "living",
+        id: 9, 
+        name: "Sillon Sofa Nevada 3 Cuerpos Premium Ergonomico Chenille", 
+        price: 531198,  
+        medidas: "Medidas: 1.8 m de ancho, 0.8 m de profundidad y 0.8 m de altura",
+        desc1: "Ofrece alta resistencia y durabilidad por su resistencia al calor y por no absorber la humedad.",
+        desc2: "No cuenta con poros en los que se pueda acumular la suciedad o desarrollar microorganismos que contaminen los alimentos o que generen malos olores.",
+        img:'../images/living/id9', 
+        cuotas:"Hasta 12 cuotas sin interés",
+        stock: "enabled",
+        colors: "enabled",
+        cantidad: 0
+    },
+    {
+        class: "living",
+        id: 10, 
+        name: "Sillón Poltrona Reclinable Pana", 
+        price: 220500,  
+        medidas: "Medidas: 1 m de ancho, 0.8 m de profundidad y 0.8 m de altura",
+        desc1: "Ofrece alta resistencia y durabilidad por su resistencia al calor y por no absorber la humedad.",
+        desc2: "No cuenta con poros en los que se pueda acumular la suciedad o desarrollar microorganismos que contaminen los alimentos o que generen malos olores.",
+        img:'../images/living/id10', 
+        cuotas:"Hasta 6 cuotas sin interés",
+        stock: "enabled",
+        colors: "disabled",
+        cantidad: 0
+    },
+    {
+        class: "living",
+        id: 11, 
+        name: "Sillon Sofa 3 Cuerpos Nevada Chenille Zaffiro Negro", 
+        price: 531198,  
+        medidas: "Medidas: 1.8 m de ancho, 0.8 m de profundidad y 0.8 m de altura",
+        desc1: "Ofrece alta resistencia y durabilidad por su resistencia al calor y por no absorber la humedad.",
+        desc2: "No cuenta con poros en los que se pueda acumular la suciedad o desarrollar microorganismos que contaminen los alimentos o que generen malos olores.",
+        img:'../images/living/id11', 
+        cuotas:"Hasta 12 cuotas sin interés",
+        stock: "enabled",
+        colors: "disabled",
+        cantidad: 0
+    },
+    {
+        class: "living",
+        id: 12, 
+        name: "Sofá Cama Cubo Premium gris claro chenille jumper", 
+        price: 408843,  
+        medidas: "Medidas: 1.8 m de ancho, 0.8 m de profundidad y 0.8 m de altura",
+        desc1: "Ofrece alta resistencia y durabilidad por su resistencia al calor y por no absorber la humedad.",
+        desc2: "No cuenta con poros en los que se pueda acumular la suciedad o desarrollar microorganismos que contaminen los alimentos o que generen malos olores.",
+        img:'../images/living/id12', 
+        cuotas:"Hasta 6 cuotas sin interés",
+        stock: "enabled",
+        colors: "disabled",
+        cantidad: 0
+    },
 ];
 
 
